@@ -19,3 +19,4 @@ docker run -p 8000:8000 zt-be-auth-service
 - **Port:** 8000
 - **Health Check:** `GET /health`
 - **Root Endpoint:** `GET /`
+# Test commit to verify CI → ECR pipeline
