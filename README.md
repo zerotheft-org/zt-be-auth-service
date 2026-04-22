@@ -24,3 +24,4 @@ docker run -p 8000:8000 zt-be-auth-service
 # Pipeline test v3 - hardened image
 # Pipeline test v4 - verbose scan output
 # Pipeline test v5 - alpine image
+# Pipeline test v6 - correct ECR repo name
