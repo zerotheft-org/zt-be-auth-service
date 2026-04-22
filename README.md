@@ -22,3 +22,4 @@ docker run -p 8000:8000 zt-be-auth-service
 # Test commit to verify CI → ECR pipeline
 # Pipeline test v2
 # Pipeline test v3 - hardened image
+# Pipeline test v4 - verbose scan output
