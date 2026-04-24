@@ -1,6 +1,10 @@
 from fastapi import FastAPI
+from common.telemetry import configure_telemetry, instrument_app
 
 app = FastAPI()
+
+# Configure OpenTelemetry
+configure_telemetry()
 
 @app.get("/")
 def root():
@@ -17,6 +21,9 @@ def health():
         "service": "Auth Service",
         "environment": "development"
     }
+
+# Instrument FastAPI app with OpenTelemetry
+instrument_app(app)
 
 if __name__ == "__main__":
     import uvicorn
